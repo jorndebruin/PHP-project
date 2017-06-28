@@ -96,9 +96,9 @@
 <section class="container-fluid text-center">
     <section class="row content">
         <section class="col-sm-2 sidenav">
-            <h3><button <a href="home.php">Auto's</a></button></h3>
-            <h3><button <a href="home2.php">Boten</a></button></h3>
-            <h3><button <a href="home3.php">Motoren</a></button></h3>
+            <h3><button <a href="#">Auto's</a></button></h3>
+            <h3><button <a href="#">Boten</a></button></h3>
+            <h3><button <a href="#">Motoren</a></button></h3>
         </section>
         <section class="col-sm-8 text-left">
 

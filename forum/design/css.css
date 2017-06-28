@@ -48,6 +48,7 @@ footer {
 .col-sm-2 {
     color: black;
     float: right;
+    margin-top: 60px;
 }
 
 h1 {
@@ -100,19 +101,6 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    opacity: 0.8;
 }
 
 .container {
