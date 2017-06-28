@@ -29,7 +29,7 @@ $password   = mysqli_real_escape_string($connection,$_POST['password']);
 $query = "SELECT email FROM gebruiker where email='".$email."'";
 $result = mysqli_query($connection,$query);
 $numResults = mysqli_num_rows($result);
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Valideer email adres
 {
 $message =  "geen bestaand email adres, probeer het opnieuw!";
 }
@@ -71,3 +71,47 @@ $message = "Signup gelukt!";
         </form>
     </div>
 </div>
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+<style type="text/css">
+    input[type=text]
+    {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        width:200px;
+        min-height: 28px;
+        padding: 4px 20px 4px 8px;
+        font-size: 12px;
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+    input[type=text]:focus
+    {
+        width: 400px;
+        border-color: #51a7e8;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);
+        outline: none;
+    }
+    </style

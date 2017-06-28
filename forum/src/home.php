@@ -10,7 +10,7 @@
 
 
 </head>
-<body background="achtergrond%20auto's.jpg">
+<body background="images/achtergrond%20auto's.jpg">
 
 <nav class="navbar navbar-inverse">
     <section class="container-fluid">
@@ -25,14 +25,14 @@
         <ul class="nav navbar-nav navbar-right">
             <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button>
 
-                <div id="id01" class="modal">
+                <section id="id01" class="modal">
 
                     <form class="modal-content animate" action="home.php">
-                        <div class="imgcontainer">
+                        <section class="imgcontainer">
                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        </div>
+                        </section>
 
-                        <div class="container">
+                        <section class="container">
                             <label><b>Username</b></label>
                             <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -41,26 +41,26 @@
 
                             <button type="submit">Sign up</button>
                             <input type="checkbox" checked="checked"> Remember me
-                        </div>
+                        </section>
 
-                        <div class="container" style="background-color:#f1f1f1">
+                        <section class="container" style="background-color:#f1f1f1">
                             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        </div>
+                        </section>
                     </form>
-                </div>
+                </section>
             </li>
 
 
             <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-                <div id="id01" class="modal">
+                <section id="id01" class="modal">
 
                     <form class="modal-content animate" action="home.php">
-                        <div class="imgcontainer">
+                        <section class="imgcontainer">
                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        </div>
+                        </section>
 
-                        <div class="container">
+                        <section class="container">
                             <label><b>Username</b></label>
                             <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -69,18 +69,29 @@
 
                             <button type="submit">Login</button>
                             <input type="checkbox" checked="checked"> Remember me
-                        </div>
+                        </section>
 
-                        <div class="container" style="background-color:#f1f1f1">
+                        <section class="container" style="background-color:#f1f1f1">
                             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                             <span class="psw">Forgot <a href="#">password?</a></span>
-                        </div>
+                        </section>
                     </form>
-                </div>
+                </section>
             </li>
         </ul>
     </section>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="container-fluid text-center">
     <section class="row content">
@@ -91,7 +102,7 @@
         </section>
         <section class="col-sm-8 text-left">
 
-            <h3>Auto's</h3><br>
+            <h1>Auto's</h1><br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel rutrum erat.
                 Donec fermentum dui quis suscipit interdum. Class aptent taciti sociosqu ad litora
                 torquent per conubia nostra, per inceptos himenaeos. Duis eget lacus sagittis,
@@ -133,10 +144,61 @@
                 mauris cursus sed. Pellentesque varius vestibulum malesuada. In sed purus mattis, tempus
                 odio sed, porta felis. Morbi faucibus condimentum urna eu condimentum. Donec elementum,
                 nisl eget elementum fringilla, sapien est accumsan lectus, vel tempor libero justo et velit.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.<br>
+
+
+
+                <div class="container">
+                    <h2>Reactions</h2><br>
+
+                    <div class="media">
+                        <div class="media-left media-top">
+                            <img src="images/images.jpg" class="media-object" style="width:80px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Voorbeeld Persoon1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img src="images/images.jpg" class="media-object" style="width:80px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Voorbeeld Persoon2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left media-bottom">
+                    <img src="images/images.jpg" class="media-object" style="width:80px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Voorbleed Persoon3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            </div>
+
+
+
 
         </section>
         <section class="col-sm-2 sidenav">
+            <section class="well">
+                <p>Hier komt heel veel reclame voor geld$$$</p>
+            </section>
+            <section class="well">
+                <p>Hier komt heel veel reclame voor geld$$$</p>
+            </section>
             <section class="well">
                 <p>Hier komt heel veel reclame voor geld$$$</p>
             </section>
@@ -162,6 +224,8 @@
         </section>
     </section>
 </section>
+
+
 
 
 </body>
