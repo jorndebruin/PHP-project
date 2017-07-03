@@ -5,12 +5,12 @@
     <meta name="description" content="A short description." />
     <meta name="keywords" content="put, keywords, here" />
     <title>PHP forum</title>
-    <link rel="stylesheet" href="../design/css.css" type="text/css">
+    <link rel="stylesheet" href="../design/forum.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 </head>
-<body background="achtergrond%20auto's.jpg">
+<body background="../src/images/achtergrond%20auto's.jpg">
 
 <nav class="navbar navbar-inverse">
     <section class="container-fluid">
@@ -18,8 +18,8 @@
             <a class="navbar-brand" href="home.php">Forum.nl</a>
         </section>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="home.php">Home</a></li>
-            <li><a href="Informatie.php">Informatie</a></li>
+            <li><a href="home.php">Home</a></li>
+            <li class="active"><a href="Informatie.php">Informatie</a></li>
             <li><a href="#">FAQ</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

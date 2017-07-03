@@ -5,11 +5,33 @@
     <meta name="description" content="A short description." />
     <meta name="keywords" content="put, keywords, here" />
     <title>PHP forum</title>
-    <link rel="stylesheet" href="../design/css.css" type="text/css">
+    <link rel="stylesheet" href="../design/forum.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
 </head>
+<?php
+
+    include 'connect.php';
+
+    if(isset($_POST['signup'])) {
+        session_start();
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $password2 = $_POST['password2'];
+
+        if($password == $password2) {
+            $password = md5($password);
+            $query = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
+            mysqli_query($db, $sql);
+            $_SESSION['message'] = "You are now logged in";
+            $_SESSION['username'] = $username;
+        } else {
+            $_SESSION['message'] = "The passwords do not match";
+        }
+    }
+
+?>
 <body background="images/achtergrond%20auto's.jpg">
 
 <nav class="navbar navbar-inverse">
@@ -23,7 +45,7 @@
             <li><a href="#">FAQ</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button>
+            <li><button onclick="document.getElementById('id01').style.display='block'" name="signup" style="width:auto;">Sign up</button>
 
                 <section id="id01" class="modal">
 
@@ -81,17 +103,6 @@
         </ul>
     </section>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
 
 <section class="container-fluid text-center">
     <section class="row content">
