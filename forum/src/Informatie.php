@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="../design/forum.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
+<style>
+    .col-sm-8 {
+        color: white;
+    }
+</style>
 </head>
 <body background="../src/images/achtergrond%20auto's.jpg">
 
@@ -89,8 +93,8 @@
             <h2><a href="#">   </a></h2>
             <h2><a href="#">   </a></h2>
         </section>
-        <section class="col-sm-8 text-left">
 
+        <section class="col-sm-8 text-left">
             <h1>Informatie</h1><br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel rutrum erat.
                 Donec fermentum dui quis suscipit interdum. Class aptent taciti sociosqu ad litora

@@ -4,6 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href="../design/forum.css" rel="stylesheet" title="Style" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .content {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
     </head>
     <body background="images/achtergrond%20auto's.jpg">
 
@@ -67,14 +73,14 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 		{
 			if(preg_match('#^(([a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+\.?)*[a-z0-9!\#$%&\\\'*+/=?^_`{|}~-]+)@(([a-z0-9-_]+\.?)*[a-z0-9-_]+)\.[a-z]{2,}$#i',$_POST['email']))
 			{
-				$username = mysql_real_escape_string($_POST['username']);
-				$password = mysql_real_escape_string(sha1($_POST['password']));
-				$email = mysql_real_escape_string($_POST['email']);
-				$avatar = mysql_real_escape_string($_POST['avatar']);
-				$dn = mysql_num_rows(mysql_query('select id from users where username="'.$username.'"'));
+				$username = $_POST['username'];
+				$password = $_POST['password'];
+				$email = $_POST['email'];
+				$avatar = $_POST['avatar'];
+				$dn = mysql_num_rows('select id from users where username="'.$username.'"');
 				if($dn==0)
 				{
-					$dn2 = mysql_num_rows(mysql_query('select id from users'));
+					$dn2 = mysql_num_rows('select id from users');
 					$id = $dn2+1;
 					if(mysql_query('insert into users(id, username, password, email, avatar, signup_date) values ('.$id.', "'.$username.'", "'.$password.'", "'.$email.'", "'.$avatar.'", "'.time().'")'))
 					{
